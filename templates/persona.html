@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Datos de la persona</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <div class="container center">
         <h1>{{ persona.nombre }}</h1>
@@ -15,10 +17,13 @@
             <li><strong>Género:</strong> {{ persona.genero }}</li>
             <li><strong>País:</strong> {{ persona.pais }}</li>
             <li><strong>Correo:</strong> {{ persona.correo }}</li>
+            <li><strong>Telefono:</strong> {{ persona.telefono }}</li>
+            <li><strong>Ciudad:</strong> {{ persona.ciudad }}</li>
 
         </ul>
 
         <a href="{{ url_for('index') }}" class="btn">Generar otra persona</a>
     </div>
 </body>
+
 </html>
